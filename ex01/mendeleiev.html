@@ -1,0 +1,947 @@
+<html>
+    <head>
+        <title>Periodic table</title>
+        <style>
+            body    {
+                        background-image: url("data:image/jpeg;base64,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");
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                    }
+            table   {
+                        margin: 0 auto;
+                    }
+            .back_ground    {
+                                background-color: rgba(100,100,100,0.5);
+                                text-align: center;
+                            }
+            .grey   {color: gray}
+            .atomicnum  {
+                        text-align: left;
+                        font-size: smaller;
+                    }
+            .symbole {
+                        text-align: center;
+                        font-size: larger;
+                        font-style: bold;
+                    }
+            .atomicweight    {
+                        text-align: right;
+                        font-size: smaller;
+                    }
+            table   {
+                        border: 1px solid black;
+                    }
+            .element    {
+                            border: 1px solid black;
+                        }
+            .alkali         {background-color: bisque;}
+            .alkali-earth   {background-color: burlywood}
+            .noble          {background-color: blueviolet}        
+            .transmision    {background-color: darkorchid}
+            .poor           {background-color: aquamarine}
+            .non            {background-color: darkcyan}
+            .iso-1          {background-color: coral}
+            .iso-2          {background-color: chocolate}
+        </style>
+    </head>
+    <body>
+        <div class="back_ground">
+        <h1>Periodic table</h1>
+        <table>
+            <tr>
+                <td>
+                    <div contenteditable="true" class="element">
+                        <div class="atomicweight">1.00794</div>
+                        <div class="symbole">H</div>
+                        <div class="atomicnum">1</div>
+                    </div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <div contenteditable="true" class="element noble">
+                        <div class="atomicweight">4.002602</div>
+                        <div class="symbole">He</div>
+                        <div class="atomicnum">2</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div contenteditable="true" class="element alkali">
+                        <div class="atomicweight">6.941</div>
+                        <div class="symbole">Li</div>
+                        <div class="atomicnum">3</div>
+                    </div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element alkali-earth">
+						<div class="atomicweight">9.012182</div>
+                        <div class="symbole">Be</div>
+                         <div class="atomicnum">4</div>
+					</div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <div contenteditable="true" class="element non">
+                        <div class="atomicweight">10.811</div>
+                        <div class="symbole">B</div>
+                         <div class="atomicnum">5</div>
+					</div>
+				</td>
+				<td>
+                    <div contenteditable="true" class="element non">
+						<div class="atomicweight">12.0107</div>
+                        <div class="symbole">C</div>
+                         <div class="atomicnum">6</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element non">
+						<div class="atomicweight">14.0067</div>
+                        <div class="symbole">N</div>
+                         <div class="atomicnum">7</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element non">
+						<div class="atomicweight">15.9994</div>
+                        <div class="symbole">O</div>
+                         <div class="atomicnum">8</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element non">
+						<div class="atomicweight">18.9984032</div>
+                        <div class="symbole">F</div>
+                         <div class="atomicnum">9</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element noble">
+						<div class="atomicweight">20.1797</div>
+                        <div class="symbole">Ne</div>
+                         <div class="atomicnum">10</div>
+					</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div contenteditable="true" class="element alkali">
+						<div class="atomicweight">22.98976928</div>
+						<div class="symbole">Na</div>
+						<div class="atomicnum">11</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element alkali-earth">
+						<div class="atomicweight">24.30.50</div>
+                        <div class="symbole">Mg</div>
+                         <div class="atomicnum">12</div>
+					</div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <div contenteditable="true" class="element poor">
+						<div class="atomicweight">26.981538</div>
+                        <div class="symbole">Al</div>
+                         <div class="atomicnum">13</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element non">
+						<div class="atomicweight">28.0855</div>
+                        <div class="symbole">Si</div>
+                         <div class="atomicnum">14</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element non">
+						<div class="atomicweight">30.973762</div>
+                        <div class="symbole">P</div>
+                         <div class="atomicnum">15</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element non">
+						<div class="atomicweight">32.065</div>
+                        <div class="symbole">S</div>
+                         <div class="atomicnum">16</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element non">
+						<div class="atomicweight">35.45</div>
+                        <div class="symbole">Cl</div>
+                         <div class="atomicnum">17</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element noble">
+						 <div class="atomicweight">39.948</div>
+						 <div class="symbole">Ar</div>
+                         <div class="atomicnum">18</div>
+					 </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div contenteditable="true" class="element alkali">
+						<div class="atomicweight">39.0983</div>
+                        <div class="symbole">K</div>
+                         <div class="atomicnum">19</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element alkali-earth">
+						<div class="atomicweight">40.078</div>
+                        <div class="symbole">Ca</div>
+                         <div class="atomicnum">20</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">44.955912</div>
+                        <div class="symbole">Sc</div>
+                         <div class="atomicnum">21</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">47.867</div>
+                        <div class="symbole">Ti</div>
+                         <div class="atomicnum">22</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">50.9415</div>
+                        <div class="symbole">V</div>
+                         <div class="atomicnum">23</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">51.9961</div>
+                        <div class="symbole">Cr</div>
+                         <div class="atomicnum">24</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">54.938045</div>
+                        <div class="symbole">Mn</div>
+                         <div class="atomicnum">25</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">55.845</div>
+                        <div class="symbole">Fe</div>
+                         <div class="atomicnum">26</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">58.933195</div>
+                        <div class="symbole">Co</div>
+                         <div class="atomicnum">27</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">58.6934</div>
+                        <div class="symbole">Ni</div>
+                         <div class="atomicnum">28</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">63.546</div>
+                        <div class="symbole">Cu</div>
+                         <div class="atomicnum">29</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element poor">
+						<div class="atomicweight">65.38</div>
+                        <div class="symbole">Zn</div>
+                         <div class="atomicnum">30</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element poor">
+						<div class="atomicweight">69.723</div>
+                        <div class="symbole">Ga</div>
+                         <div class="atomicnum">31</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element poor">
+						<div class="atomicweight">72.64</div>
+                        <div class="symbole">Ge</div>
+                         <div class="atomicnum">32</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element non">
+						<div class="atomicweight">74.92160</div>
+                        <div class="symbole">As</div>
+                         <div class="atomicnum">33</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element non">
+						<div class="atomicweight">78.96</div>
+						<div class="symbole">Se</div>
+						<div class="atomicnum">34</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element non">
+						<div class="atomicweight">79.904</div>
+                        <div class="symbole">Br</div>
+                         <div class="atomicnum">35</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element noble">
+						<div class="atomicweight">83.798</div>
+                        <div class="symbole">Kr</div>
+                         <div class="atomicnum">36</div>
+					</div>
+                </td>
+            </tr>
+			<tr>
+				<td>
+                    <div contenteditable="true" class="element alkali">
+						<div class="atomicweight">85.4678</div>
+                        <div class="symbole">Rb</div>
+                         <div class="atomicnum">37</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element alkali-earth">
+						<div class="atomicweight">87.62</div>
+						<div class="symbole">Sr</div>
+						<div class="atomicnum">38</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+                        <div class="atomicweight">88.90585</div>
+                        <div class="symbole">Y</div>
+                         <div class="atomicnum">39</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+                        <div class="atomicweight">91.224</div>
+                        <div class="symbole">Zr</div>
+                         <div class="atomicnum">40</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+                        <div class="atomicweight">92.9068</div>
+                        <div class="symbole">Nb</div>
+                         <div class="atomicnum">41</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+                        <div class="atomicweight">95.96</div>
+                        <div class="symbole">Mo</div>
+                         <div class="atomicnum">42</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+                        <div class="atomicweight">97.9072</div>
+                        <div class="symbole">Tc</div>
+                         <div class="atomicnum">43</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+                        <div class="atomicweight">101.07</div>
+                        <div class="symbole">Ru</div>
+                         <div class="atomicnum">44</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+                        <div class="atomicweight">102.90550</div>
+                        <div class="symbole">Rh</div>
+                         <div class="atomicnum">45</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+                        <div class="atomicweight">106.42</div>
+                        <div class="symbole">Pd</div>
+                         <div class="atomicnum">46</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+                        <div class="atomicweight">107.8682</div>
+                        <div class="symbole">Ag</div>
+                         <div class="atomicnum">47</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element poor">
+                        <div class="atomicweight">112.411</div>
+                        <div class="symbole">Cd</div>
+                         <div class="atomicnum">48</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element poor">
+                        <div class="atomicweight">114.818</div>
+                        <div class="symbole">In</div>
+						<div class="atomicnum">49</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element poor">
+                        <div class="atomicweight">118.710</div>
+                        <div class="symbole">Sn</div>
+                         <div class="atomicnum">50</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element poor">
+                        <div class="atomicweight">121.760</div>
+                        <div class="symbole">Sb</div>
+                         <div class="atomicnum">51</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element  non">
+                        <div class="atomicweight">127.60</div>
+                        <div class="symbole">Te</div>
+                         <div class="atomicnum">52</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element non">
+                        <div class="atomicweight">126.90447</div>
+                        <div class="symbole">I</div>
+                         <div class="atomicnum">53</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element noble">
+                        <div class="atomicweight">131.293</div>
+                        <div class="symbole">Xe</div>
+                         <div class="atomicnum">54</div>
+					</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div contenteditable="true" class="element alkali">
+                        <div class="atomicweight">132.9054519</div>
+                        <div class="symbole">Cs</div>
+                         <div class="atomicnum">55</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true"class="element alkali-earth">
+                        <div class="atomicweight">137.327</div>
+                        <div class="symbole">Ba</div>
+                         <div class="atomicnum">56</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-1">
+						<div class="symbole">57 - 71</div>
+                    </div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+                        <div class="atomicweight">178.49</div>
+                        <div class="symbole">Hf</div>
+                         <div class="atomicnum">72</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+                        <div class="atomicweight">180.94788</div>
+                        <div class="symbole">Ta</div>
+                         <div class="atomicnum">73</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+                        <div class="atomicweight">183.84</div>
+                        <div class="symbole">W</div>
+                         <div class="atomicnum">74</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+                        <div class="atomicweight">186.207</div>
+						<div class="symbole">Re</div>
+						<div class="atomicnum">75</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						 <div class="atomicweight">190.23</div>
+						 <div class="symbole">Os</div>
+                         <div class="atomicnum">76</div>
+					 </div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">192.217</div>
+						<div class="symbole">Ir</div>
+						<div class="atomicnum">77</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">195.084</div>
+						<div class="symbole">Pt</div>
+						<div class="atomicnum">78</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">196.966569</div>
+						<div class="symbole">Au</div>
+						<div class="atomicnum">79</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element poor">
+						<div class="atomicweight">200.59</div>
+						<div class="symbole">Hg</div>
+						<div class="atomicnum">80</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element poor">
+						<div class="atomicweight">204.3833</div>
+						<div class="symbole">Ti</div>
+						<div class="atomicnum">81</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element poor">
+						<div class="atomicweight">207.2</div>
+						<div class="symbole">Pb</div>
+						<div class="atomicnum">82</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element poor">
+						<div class="atomicweight">208.98040</div>
+						<div class="symbole">Bi</div>
+						<div class="atomicnum">83</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element poor">
+						<div class="atomicweight">208.9824</div>
+						<div class="symbole">Po</div>
+						<div class="atomicnum">84</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element non">
+						<div class="atomicweight">209.9871</div>
+						<div class="symbole">At</div>
+						<div class="atomicnum">85</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element noble">
+						<div class="atomicweight">222.0176</div>
+						<div class="symbole">Rn</div>
+						<div class="atomicnum">86</div>
+					</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div contenteditable="true" class="element alkali">
+						<div class="atomicweight">223</div>
+						<div class="symbole">Fr</div>
+						<div class="atomicnum">87</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element alkali-earth">
+						<div class="atomicweight">226</div>
+						<div class="symbole">Ra</div>
+						<div class="atomicnum">88</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-2">
+						<div class="symbole">89 - 103</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">261</div>
+                        <div class="symbole grey">Rf</div>
+						<div class="atomicnum">104</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">262</div>
+                        <div class="symbole grey">Db</div>
+						<div class="atomicnum">105</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">266</div>
+                        <div class="symbole grey">Sg</div>
+						<div class="atomicnum">106</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">264</div>
+                        <div class="symbole grey">Bh</div>
+						<div class="atomicnum">107</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">277</div>
+                        <div class="symbole grey">Hs</div>
+						<div class="atomicnum">108</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">268</div>
+                        <div class="symbole grey">Mt</div>
+						<div class="atomicnum">109</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">271</div>
+                        <div class="symbole grey">Ds</div>
+						<div class="atomicnum">110</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element transmision">
+						<div class="atomicweight">272</div>
+                        <div class="symbole grey">Rg</div>
+						<div class="atomicnum">111</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element poor">
+						<div class="atomicweight">285</div>
+                        <div class="symbole grey">Cn</div>
+						<div class="atomicnum">112</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element poor">
+						<div class="atomicweight">284</div>
+                        <div class="symbole grey">Uut</div>
+						<div class="atomicnum">113</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element poor">
+						<div class="atomicweight">289</div>
+                        <div class="symbole grey">Fl</div>
+						<div class="atomicnum">114</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element poor">
+						<div class="atomicweight">288</div>
+                        <div class="symbole grey">Uup</div>
+						<div class="atomicnum">115</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element poor">
+						<div class="atomicweight">292</div>
+                        <div class="symbole grey">Lv</div>
+						<div class="atomicnum">116</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element poor">
+						<div class="atomicweight">294</div>
+                        <div class="symbole grey">Uus</div>
+						<div class="atomicnum">117</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element noble">
+						<div class="atomicweight">294</div>
+                        <div class="symbole grey">Uuo</div>
+						<div class="atomicnum">118</div>
+					</div>
+                </td>
+            </tr>
+            <tr></tr>
+        </table>
+        <h3>No stable Isotopes</h3>
+        <table>
+            <tr>
+                <td>
+                    <div contenteditable="true" class="element iso-1">
+						<div class="atomicweight">138.90547</div>
+						<div class="symbole">La</div>
+						<div class="atomicnum">57</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-1">
+						<div class="atomicweight">140.116</div>
+						<div class="symbole">Ce</div>
+						<div class="atomicnum">58</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-1">
+						<div class="atomicweight">140.90765</div>
+						<div class="symbole">Pr</div>
+						<div class="atomicnum">59</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-1">
+						<div class="atomicweight">144.242</div>
+						<div class="symbole">Nd</div>
+						<div class="atomicnum">60</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-1">
+						<div class="atomicweight">145</div>
+						<div class="symbole">Pm</div>
+						<div class="atomicnum">61</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-1">
+						<div class="atomicweight">150.36</div>
+						<div class="symbole">Sm</div>
+						<div class="atomicnum">62</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-1">
+						<div class="atomicweight">151.964</div>
+						<div class="symbole">Eu</div>
+						<div class="atomicnum">63</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-1">
+						<div class="atomicweight">157.25</div>
+						<div class="symbole">Gu</div>
+						<div class="atomicnum">64</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-1">
+						<div class="atomicweight">158.92535</div>
+						<div class="symbole">Tb</div>
+						<div class="atomicnum">65</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-1">
+						<div class="atomicweight">162.500</div>
+						<div class="symbole">Dy</div>
+						<div class="atomicnum">66</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-1">
+						<div class="atomicweight">164.93032</div>
+						<div class="symbole">Ho</div>
+						<div class="atomicnum">67</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-1">
+						<div class="atomicweight">167.259</div>
+						<div class="symbole">Er</div>
+						<div class="atomicnum">68</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-1">
+						<div class="atomicweight">168.93421</div>
+						<div class="symbole">Tm</div>
+						<div class="atomicnum">69</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-1">
+						<div class="atomicweight">173.054</div>
+						<div class="symbole">Yb</div>
+						<div class="atomicnum">70</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-1">
+						<div class="atomicweight">174.9668</div>
+						<div class="symbole">Lu</div>
+						<div class="atomicnum">71</div>
+					</div>
+                </td>
+            </tr>
+            <tr>
+                 <td>
+                    <div contenteditable="true" class="element iso-2">
+						<div class="atomicweight">227</div>
+						<div class="symbole">Ac</div>
+						<div class="atomicnum">89</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-2">
+							<div class="atomicweight">232.03806</div>
+                            <div class="symbole">Th</div>
+						<div class="atomicnum">90</div>
+						</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-2">
+						<div class="atomicweight">231.03588</div>
+						<div class="symbole">Pa</div>
+						<div class="atomicnum">91</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-2">
+						<div class="atomicweight">238.02891</div>
+						<div class="symbole">U</div>
+						<div class="atomicnum">92</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-2">
+						<div class="atomicweight">237</div>
+						<div class="symbole">Np</div>
+						<div class="atomicnum">93</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-2">
+						<div class="atomicweight">244</div>
+						<div class="symbole">Pu</div>
+						<div class="atomicnum">94</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-2">
+						<div class="atomicweight">243</div>
+						<div class="symbole">Am</div>
+						<div class="atomicnum">95</div> 
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-2">
+						<div class="atomicweight">247</div>
+						<div class="symbole">Cm</div>
+						<div class="atomicnum">96</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-2">
+						<div class="atomicweight">247</div>
+						<div class="symbole">Bk</div>
+						<div class="atomicnum">97</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-2">
+						<div class="atomicweight">251</div>
+						<div class="symbole">Cf</div>
+						<div class="atomicnum">98</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-2">
+						<div class="atomicweight">252</div>
+						<div class="symbole">Es</div>
+						<div class="atomicnum">99</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-2">
+						<div class="atomicweight">257</div>
+						<div class="symbole">Fm</div>
+						<div class="atomicnum">100</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-2">
+						<div class="atomicweight">258</div>
+						<div class="symbole">Md</div>
+						<div class="atomicnum">101</div>
+					</div>
+                </td>
+                <td>
+                    <div contenteditable="true" class="element iso-2">
+						<div class="atomicweight">259</div>
+						<div class="symbole">No</div>
+						<div class="atomicnum">102</div>
+					</div>
+                <td>
+                    <div contenteditable="true" class="element iso-2">
+						 <div class="atomicweight">262</div>
+						 <div class="symbole">Lr</div>
+                         <div class="atomicnum"> 103 </div>
+					 </div>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>
